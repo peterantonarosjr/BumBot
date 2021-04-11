@@ -1,7 +1,7 @@
-# supreme-bot
-A free to use bot for supremenewyork.com that allows multiple-item checkout
+# Bum-Bot
 
-## Requirements
+## Required
+pip3 install -r required.txt
 
 
 ## Usage
