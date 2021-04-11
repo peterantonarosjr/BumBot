@@ -1,0 +1,20 @@
+{
+    "items": {
+            "name": "Faded Ripstop 6-Panel",
+            "colorwayPosition": "Red",
+            "size": ""
+        },
+    "billingInfo": {
+        "fullName": "Peter Antonaros",
+        "email": "antonaros.peter.227@gmail.com",
+        "phone": "3479566292",
+        "address": "2464 26 street",
+        "unit": "1",
+        "zip": "11102",
+        "state": "NY",
+        "ccNumber": "11111",
+        "expM": "01",
+        "expY": "22",
+        "cvv": "111"
+    }
+}
