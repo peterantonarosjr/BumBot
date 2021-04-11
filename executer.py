@@ -7,23 +7,23 @@ def main():
                         datefmt="%I:%M:%S", level=logging.INFO)
 
     items = {
-            "name": "Spray Tartan Shirt",
+            "name": "",
             "colorwayPosition": "",
             "size": ""
         }
     billing_info = {
-        "fullName": "Peter Antonaros",
-        "email": "antonaros.peter.227@gmail.com",
-        "phone": "3479566292",
-        "address": "2464 26 street",
-        "unit": "1",
-        "zip": "11102",
-        "city": "Astoria",
-        "state": "NY",
-        "ccNumber": "11111",
-        "expM": "01",
-        "expY": "2022",
-        "cvv": "111"
+        "fullName": "",
+        "email": "",
+        "phone": "",
+        "address": "",
+        "unit": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "ccNumber": "",
+        "expM": "",
+        "expY": "",
+        "cvv": ""
     }
     numberOfBuys = 1
 
