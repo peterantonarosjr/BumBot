@@ -7,27 +7,27 @@ def main():
                         datefmt="%I:%M:%S", level=logging.INFO)
 
     items = {
-            "name": "",
-            "colorwayPosition": "",
-            "size": ""
+            "name": "ITEM",
+            "colorwayPosition": "COLOR",
+            "size": "SIZE"
         }
     billing_info = {
-        "fullName": "",
-        "email": "",
-        "phone": "",
-        "address": "",
-        "unit": "",
-        "zip": "",
-        "city": "",
-        "state": "",
-        "ccNumber": "",
-        "expM": "",
-        "expY": "",
-        "cvv": ""
+        "fullName": "NAME",
+        "email": "EMAIL",
+        "phone": "PHONE",
+        "address": "ADDRESS",
+        "unit": "UNIT",
+        "zip": "ZIPCODE",
+        "city": "CITY",
+        "state": "STATE (2 Letters)",
+        "ccNumber": "CCNUMBER",
+        "expM": "MONTH (2 Numbers)",
+        "expY": "YEAR (4 Numbers)",
+        "cvv": "CCV"
     }
     numberOfBuys = 1
 
-    bot = Bot("https://www.supremenewyork.com/shop/all/shirts")
+    bot = Bot("https://www.supremenewyork.com/shop/all/jackets")
     logging.info("Initialized a bot instance")
     item_index = 0
     while item_index != numberOfBuys:

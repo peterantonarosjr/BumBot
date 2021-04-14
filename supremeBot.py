@@ -21,14 +21,14 @@ class Bot:
         return self.webdriver.click_on_element(item)
 
     def select_colorway(self, item_colorway_position):
-        colorway_box_x_path = '//*[@id="styles       "]/ul/li[{}]'.format(
+        colorway_box_x_path = '//*[contains(@class, "styles ")]/li[{}]'.format(
             item_colorway_position)
         colorway_box = self.webdriver.find_element_by_x_path(
             colorway_box_x_path)
         return self.webdriver.click_on_element(colorway_box)
 
     def select_size(self, item_size):
-        return self.webdriver.select_dropdown_option('//*[@id="select-size"]', item_size)
+        return self.webdriver.select_dropdown_option('//*[@name="s"]', item_size)
 
     def add_to_cart(self):
         add_to_cart_button = self.webdriver.find_element_by_x_path("//input[@type='submit']")
@@ -51,10 +51,10 @@ class Bot:
         self.webdriver.fill_in_input_field(
             '//input[@placeholder="address"]', billing_info["address"]
         )
-        if billing_info["unit"]:
-            self.webdriver.fill_in_input_field(
-                '//input[@placeholder="apt, unit, etc"]', billing_info["unit"]
-            )
+        #if billing_info["unit"]:
+            #self.webdriver.fill_in_input_field(
+            #    '//input[@placeholder="apt, unit, etc"]', billing_info["unit"]
+            #)Causes a glitch with city address
         self.webdriver.fill_in_input_field(
             '//input[@placeholder="zip"]', billing_info["zip"]
         )
